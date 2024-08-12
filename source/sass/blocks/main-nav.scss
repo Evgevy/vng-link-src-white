@@ -152,7 +152,7 @@
       @media (min-width: 1023px) {
         @include focus-within {
           .main-nav__link {
-            color: red;
+            color: white;
 
             &::after {
               content: "";
@@ -197,7 +197,7 @@
     &.menu-item-has-children.is-active {
       .main-nav__link {
         @include vp-1023 {
-          color: red;
+          color: white;
         }
 
         svg {

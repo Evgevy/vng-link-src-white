@@ -544,6 +544,10 @@
     visibility: visible;
   }
 
+  .main-nav__sublist>li>a {
+    color: white;
+  }
+
   .main-nav__phone {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
