@@ -130,7 +130,7 @@
   }
 
   &__contacts-info>a:hover {
-    color: gold;
+    color: #9fb4ff;
   }
 
   &__contacts-info>a:last-child {
@@ -157,10 +157,22 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
+
+    svg {
+      path {
+        transition: .2s;
+      }
+    }
   }
 
   &__menu>li>a:hover {
-    color: gold;
+    color: #9fb4ff;
+
+    svg {
+      path {
+        fill: #9fb4ff;
+      }
+    }
   }
 
   &__sub-menu {
@@ -175,6 +187,19 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 176.5%;
+    transition: .3s;
+  }
+
+  &__sub-menu>li {
+    transition: .3s;
+  }
+
+  &__sub-menu>li:hover {
+    color: #9fb4ff;
+  }
+
+  &__sub-menu>li>a:hover {
+    color: #9fb4ff;
   }
 
   &__sub-menu>li {
@@ -402,6 +427,24 @@
 
     &__policy-text {
       font-size: 16px;
+    }
+  }
+}
+
+.social {
+  position: fixed;
+  z-index: 10;
+  bottom: 10%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    a {
+      svg {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }
